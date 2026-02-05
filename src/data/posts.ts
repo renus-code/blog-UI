@@ -8,6 +8,14 @@ export type Post = {
   imageUrl: string;
 };
 
+export type Comment = {
+  id: string;
+  postId: number;
+  author: string;
+  text: string;
+  timestamp: string;
+};
+
 export const posts: Post[] = [
   {
     id: 1,
